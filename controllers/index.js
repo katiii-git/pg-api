@@ -12,7 +12,7 @@ const createUser = async (req, res)=> {
 };
 
 const  deleteUser  = async (req,  res)  =>  {
-   console.log('deleting user....');
+   console.log('deleting user...');
 
    try {
       const user = await models.User.findOne({ where: { id: req.params.id } });
